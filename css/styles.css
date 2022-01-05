@@ -2,16 +2,123 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Inconsolata', monospace, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #40514E;
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0 auto 20px auto;
+  font-size: 3.125rem;
   font-family: 'Courgette', Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #1B2021;
+}
+
+h2 {
+  padding-bottom: 10px;
+  margin: 40px 0;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 10px;
+  border-bottom: none;
+  width: 20%;
+  margin: 100px auto;
+}
+
+a {
+  color: #40514E;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 .intro {
   /*background-image: linear-gradient( 111.5deg,  rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2% );*/
   background-image: linear-gradient( 68.4deg,  rgba(248,182,204,1) 0.5%, rgba(192,198,230,1) 49%, rgba(225,246,240,1) 99.8% );
-  padding: 100px 0;
+  padding: 200px 0;
+}
+
+.intro p {
+  font-size: 1.44rem;
   font-weight: bold;
+  margin: 0;
+}
+
+.about-text {
+  width: 40%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 150px auto;
+  text-align: left;
+}
+
+.obj-icon-a {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+.obj-icon-b {
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin-left: 30px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px auto;
+}
+
+.contact-btn {
+  background: #ee8fff;
+  background-image: -webkit-linear-gradient(top, #ee8fff, #17d8ed);
+  background-image: -moz-linear-gradient(top, #ee8fff, #17d8ed);
+  background-image: -ms-linear-gradient(top, #ee8fff, #17d8ed);
+  background-image: -o-linear-gradient(top, #ee8fff, #17d8ed);
+  background-image: linear-gradient(68.4deg, #ee8fff, #17d8ed);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: #e66bff;
+  background-image: -webkit-linear-gradient(top, #e66bff, #1fcede);
+  background-image: -moz-linear-gradient(top, #e66bff, #1fcede);
+  background-image: -ms-linear-gradient(top, #e66bff, #1fcede);
+  background-image: -o-linear-gradient(top, #e66bff, #1fcede);
+  background-image: linear-gradient(68.4deg, #e66bff, #1fcede);
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-image: linear-gradient( 68.4deg,  rgba(248,182,204,1) 0.5%, rgba(192,198,230,1) 49%, rgba(225,246,240,1) 99.8% );
+  padding: 50px 0 20px 0;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 20px 0;
 }

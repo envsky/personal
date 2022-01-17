@@ -15,13 +15,6 @@ p {
   line-height: 2;
 }
 
-hr {
-  border: dotted #EAF6F6 10px;
-  border-bottom: none;
-  width: 20%;
-  margin: 100px auto;
-}
-
 a {
   color: #40514E;
   margin: 10px 20px;
@@ -60,6 +53,50 @@ a:hover {
   font-size: 3.44rem;
   font-weight: bold;
   margin: 0;
+}
+
+#text {
+  overflow: hidden;
+	margin: 50px auto;
+	font-size: 30px;
+  display: inline-block;
+  width: 480px;
+}
+
+#text:after {
+  content: '';
+  display: inline-block;
+	background-color: white;
+	margin-left: 2px;
+	height: 30px;
+  width: 4px;
+  animation: cursor 0.4s infinite;
+}
+/* The typewriter cursor effect */
+@keyframes cursor {
+  0% { opacity: 1; }
+	49% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.animated {
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+  position: relative;
+  margin: 50px auto;
+}
+/* Animation */
+.animated {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 480px;}
 }
 
 .about-text {

@@ -13,13 +13,13 @@ function triggerText() {
   else if (i > txt[j].length) {
     cursor.style.setProperty('--primary-animation', 'cursor 0s infinite');
     j++;
-    setTimeout(triggerText, 3000);
+    setTimeout(triggerText, 2000);
   }
   else {
     document.getElementById(element[j]).innerHTML += txt[j].charAt(i);
     i++;
     if (i > txt[j].length)
-      speed = 1500;
+      speed = 1000;
     setTimeout(triggerText, speed);
   }
 }

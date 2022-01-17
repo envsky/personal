@@ -5,6 +5,10 @@ var txt = ['std::cout<<"HelloWorld"<<std::endl;', '> Segmentation fault (core du
 var element = ['first', 'second'];
 var speed = 100;
 
+function startUp() {
+  setTimeout(triggerText, 1000);
+}
+
 function triggerText() {
   if (j == 1) {
     cursor.style.setProperty('--primary-animation', 'cursor 0.6s infinite');

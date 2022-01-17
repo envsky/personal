@@ -6,7 +6,7 @@ var element = ['first', 'second'];
 var speed = 100;
 
 function startUp() {
-  setTimeout(triggerText, 1000);
+  setTimeout(triggerText, 1500);
 }
 
 function triggerText() {

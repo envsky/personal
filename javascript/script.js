@@ -1,14 +1,25 @@
 var i = 0;
-var tag = document.getElementById("text");
-var html = document.getElementById("text").innerHTML;
-var attr = tag.setAttribute("data", html);
-var txt = tag.getAttribute("data");
-var speed = 70;
+var j = 0;
+const cursor = document.querySelector(".animated-text");
+var txt = ['std::cout<<"HelloWorld"<<std::endl;', '> Segmentation fault (core dumped)'];
+var element = ['first', 'second'];
+var speed = 100;
 
-function typeWriter() {
-  if (i <= txt.length) {
-    document.getElementById("text").innerHTML = txt.slice(0 , i + 1);
+function triggerText() {
+  if (j == 1) {
+    cursor.style.setProperty('--primary-animation', 'cursor 0.6s infinite');
+    document.getElementById(element[j]).innerHTML = txt[j];
+  }
+  else if (i > txt[j].length) {
+    cursor.style.setProperty('--primary-animation', 'cursor 0s infinite');
+    j++;
+    setTimeout(triggerText, 3000);
+  }
+  else {
+    document.getElementById(element[j]).innerHTML += txt[j].charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    if (i > txt[j].length)
+      speed = 1500;
+    setTimeout(triggerText, speed);
   }
 }

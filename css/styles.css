@@ -7,23 +7,16 @@ body {
 }
 
 h2 {
-  padding-bottom: 10px;
-  margin: 40px 0;
+  margin-top: 50px;
 }
 
 p {
   line-height: 2;
+  font-size: 1.25rem
 }
 
 a {
-  color: #40514E;
-  margin: 10px 20px;
-  text-decoration: none;
-  font-size: 1.25rem;
-}
-
-a:hover {
-  color: #ffffff;
+  font-size: 1.4rem;
 }
 
 .navbar {
@@ -32,7 +25,7 @@ a:hover {
 
 .intro {
   height: 100vh;
-  padding: 200px 0;
+  padding: 200px 0 0 0;
 }
 
 .intro h1 {
@@ -52,25 +45,25 @@ a:hover {
   line-height: normal;
   font-size: 3.44rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0 auto 110px auto;
 }
 
-#text {
+.animated-text {
   overflow: hidden;
-	margin: 50px auto;
+	margin: 0 auto;
+  font-family: monospace;
 	font-size: 30px;
   display: inline-block;
-  width: 480px;
 }
 
-#text:after {
+.animated-text:after {
   content: '';
   display: inline-block;
 	background-color: white;
 	margin-left: 2px;
 	height: 30px;
   width: 4px;
-  animation: cursor 0.4s infinite;
+  animation: var(--primary-animation, cursor 0.6s infinite);
 }
 /* The typewriter cursor effect */
 @keyframes cursor {
@@ -80,38 +73,32 @@ a:hover {
 	100% { opacity: 0; }
 }
 
-.animated {
-  height: 40px;
-  white-space: nowrap;
+.output-text {
   overflow: hidden;
-  font-size: 28px;
-  color: rgba(255,255,255,.70);
-  position: relative;
-  margin: 50px auto;
-}
-/* Animation */
-.animated {
-  animation: animated-text 2s steps(30,end) 1s 1 normal both
-}
-/* text animation */
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 480px;}
-}
-
-.about-text {
-  width: 40%;
-  margin: auto;
+	margin: 0 auto;
+  font-family: monospace;
+	font-size: 30px;
+  display: inline-block;
+  color: #b31b1b;
 }
 
 .skill-row {
-  width: 90%;
+  width: 70%;
   overflow: hidden;
-  padding: 5% 20%;
+  padding: 5% 5%;
   margin: 70px auto;
   text-align: left;
   border-radius: 25px;
   background-color: #1c1c1c;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.skill-row:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .obj-icon-a {
@@ -129,7 +116,12 @@ a:hover {
 }
 
 .middle-container {
-  margin: 100px 0;
+  margin-bottom: 100px;
+}
+
+.contact-header {
+  padding-bottom: 10px;
+  margin: 40px 0;
 }
 
 .contact-message {
@@ -167,6 +159,17 @@ a:hover {
 .bottom-container {
   background-image: linear-gradient( 180.3deg,  rgba(214,224,255,1) 37.2%, rgba(254,168,168,1) 137.3% );
   padding: 50px 0 20px 0;
+}
+
+.footer-link {
+  color: #40514E;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.footer-link:hover {
+  color: #ffffff;
 }
 
 .copyright {
